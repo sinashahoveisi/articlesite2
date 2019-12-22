@@ -7,7 +7,7 @@ import sqlite3
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL','sqlite:///DataBase.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 app.config['SECRET_KEY'] = 'ldfjsolasfuasdfjsodfusoij4w09r8pswojufsldkfjdf9'
 app.config['CSRF_ENABLED']=True
