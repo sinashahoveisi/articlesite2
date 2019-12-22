@@ -1,6 +1,7 @@
 from flask import Flask,render_template,session, request, flash,redirect,url_for
 from wtforms import form,StringField,TextAreaField,PasswordField,validators
 from flask_sqlalchemy import SQLAlchemy
+import psycopg2
 import datetime, time
 import os
 import sqlite3
