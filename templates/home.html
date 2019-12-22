@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<body class="bg" style="background-image: url(http://sinasho.ir/ArticleSite/home_bg.jpg);">
+    <div class="bg-text-welcome" style="margin-top: 65px;">
+        <h1><font color="white">Welcome to Articles site</font></h1>
+        <p class="lead"></p>
+        {% if session.logged_in == NULL %}
+            <a href="/register" class="btn btn-primary btn-lg">Register</a>
+            <a href="/login" style="margin-left: 20px;" class="btn btn-success btn-lg">Login</a>
+        {% endif %}
+    </div>
+</body>
+{% endblock %}
